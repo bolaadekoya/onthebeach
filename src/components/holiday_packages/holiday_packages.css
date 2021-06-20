@@ -1,0 +1,60 @@
+@import url(../../shared.css);
+
+.flex-cont {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    background: url(../../assets/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-item-left {
+    background-color: var(--white);
+    flex: 25%;
+    margin-right: 20px;
+    align-self: baseline;
+}
+
+.flex-item-left span {
+    font-weight: bold;
+}
+
+
+.flex-item-left .icon {
+    float: right;
+    color: var(--light-grey);
+}
+
+.flex-item-left>div {
+    padding: 15px;
+    font-size: 13px;
+    max-width: 100%;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.flex-item-left>div:not(:last-child) {
+    border-bottom: 1px solid var(--blue);
+}
+
+.flex-item-left>div.active {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.flex-item-right {
+    flex: 75%;
+}
+
+@media (max-width: 768px) {
+    .flex-cont {
+        flex-direction: column;
+    }
+
+    .flex-item-left {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}

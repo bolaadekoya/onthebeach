@@ -1,0 +1,132 @@
+.cont {
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+    height: 350px;
+    position: relative;
+}
+
+.wrapper .img-cont {
+    flex: 60%;
+}
+
+img {
+    height: 350px;
+    width: 60%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.read-more {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: var(--white);
+    color: var(--blue);
+    padding: 5px 20px 5px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.details {
+    flex: 40%;
+    padding: 20px 20px 20px 80px;
+}
+
+.details>div {
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--blue);
+    font-weight: bolder;
+}
+
+.location {
+    color: var(--light-grey);
+    text-transform: capitalize;
+}
+
+.passengers,
+.date,
+.departure {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.departure span,
+.date span {
+    font-weight: bold;
+}
+
+.passengers>div {
+    margin-right: 5px;
+    display: inline;
+}
+
+.passengers>div>span {
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.book-now {
+    background: var(--yellow);
+    margin-top: 20px;
+    padding: 20px;
+    border: none;
+    width: 80%;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.book-now span:first-child {
+    display: block;
+}
+
+.book-now span:last-child {
+    font-size: 30px;
+}
+
+.description {
+    background: var(--white);
+    padding: 20px;
+    line-height: 1.5;
+    color: var(--gray);
+}
+
+.description h4 {
+    margin: 0;
+    color: var(--blue);
+}
+
+.read-more .icon {
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.details .star {
+    color: var(--yellow);
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 40%;
+    }
+
+    .book-now span:last-child {
+        font-size: 20px;
+    }
+
+    .book-now {
+        margin-top: 0;
+        padding: 5px;
+        border: none;
+        width: 100%;
+    }
+}
